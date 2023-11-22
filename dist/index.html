@@ -33,60 +33,39 @@
   <body>
     <div class="">
       <header class="relative">
-        <div class="hidden" id="mobile-menu">
-          <nav
-            class="absolute right-0 top-0 w-2/3 min-h-screen text-black bg-white z-10"
-          >
-            <ul
-              class="flex flex-col pt-36 text-lg font-light leading-6 text-header tracking-wide"
-            >
-              <li class="pl-6 py-3"><a href="#">Home</a></li>
-              <li class="pl-6 py-3"><a href="#">New</a></li>
-              <li class="pl-6 py-3"><a href="#">Popular</a></li>
-              <li class="pl-6 py-3"><a href="#">Trending</a></li>
-              <li class="pl-6 py-3"><a href="#">Categories</a></li>
-            </ul>
-          </nav>
-          <button id="close-btn">
-            <img
-              src="./assets/images/icon-menu-close.svg"
-              alt=""
-              class="absolute top-6 right-5 z-20"
-            />
-          </button>
-          <div
-            class="bg-black min-h-screen opacity-50 absolute right-0 left-0 top-0"
-          ></div>
-        </div>
         <div class="flex justify-between items-center py-2 px-6 pt-6">
-          <div id="logo" class="w-[45px]">
+          <div id="logo" class="w-[45px] md:w-[64px]">
             <a href="#"><img src="./assets/images/logo.svg" alt="" /></a>
           </div>
-          <div>
-            <button id="icon-menu-btn" class="md:hidden">
-              <img src="./assets/images/icon-menu.svg" alt="" />
-            </button>
-            <nav class="text-black bg-white hidden md:block">
+          <button id="icon-menu-btn" class="md:hidden">
+            <img src="./assets/images/icon-menu.svg" alt="" />
+          </button>
+          <div id="menu" class="">
+            <nav
+              class="absolute right-0 top-0 w-2/3 min-h-screen md:static md:min-h-min md:w-auto bg-white md:bg-transparent z-10"
+            >
               <ul
-                class="flex text-md font-light leading-6 text-header tracking-wide"
+                class="flex flex-col md:flex-row pt-36 md:pt-0 text-lg md:text-[15px] font-light leading-6 text-header tracking-wide"
               >
-                <li class="pl-6 sm:pl-[52px] py-3">
-                  <a href="#" class="text-[15px]">Home</a>
-                </li>
-                <li class="pl-6 sm:pl-[52px] py-3">
-                  <a href="#" class="text-[15px]">New</a>
-                </li>
-                <li class="pl-6 sm:pl-[52px] py-3">
-                  <a href="#" class="text-[15px]">Popular</a>
-                </li>
-                <li class="pl-6 sm:pl-[52px] py-3">
-                  <a href="#" class="text-[15px]">Trending</a>
-                </li>
-                <li class="pl-6 sm:pl-[52px] py-3">
-                  <a href="#" class="text-[15px]">Categories</a>
+                <li class="pl-6 py-3 sm:pl-[52px]"><a href="#">Home</a></li>
+                <li class="pl-6 py-3 sm:pl-[52px]"><a href="#">New</a></li>
+                <li class="pl-6 py-3 sm:pl-[52px]"><a href="#">Popular</a></li>
+                <li class="pl-6 py-3 sm:pl-[52px]"><a href="#">Trending</a></li>
+                <li class="pl-6 py-3 sm:pl-[52px]">
+                  <a href="#">Categories</a>
                 </li>
               </ul>
             </nav>
+            <button id="close-btn" class="md:hidden">
+              <img
+                src="./assets/images/icon-menu-close.svg"
+                alt=""
+                class="absolute top-6 right-5 z-20"
+              />
+            </button>
+            <div
+              class="bg-black md:hidden min-h-screen opacity-50 absolute right-0 left-0 top-0"
+            ></div>
           </div>
         </div>
       </header>

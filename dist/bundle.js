@@ -116,7 +116,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n(() => {\n  const menuIconBtn = document.getElementById(\"icon-menu-btn\");\n  const closeBtn = document.getElementById(\"close-btn\");\n  const mobileMenu = document.getElementById(\"mobile-menu\");\n\n  menuIconBtn.addEventListener(\"onclick\", (e) => {\n    e.preventDefault();\n    mobileMenu.className = \"block\";\n  });\n})();\n\n\n//# sourceURL=webpack://fem-news-homepage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n(() => {\n  const menuIconBtn = document.getElementById(\"icon-menu-btn\");\n  const closeBtn = document.getElementById(\"close-btn\");\n  const mobileMenu = document.getElementById(\"mobile-menu\");\n\n  menuIconBtn.addEventListener(\"click\", (e) => {\n    e.preventDefault();\n    mobileMenu.className = \"block\";\n  });\n\n  closeBtn.addEventListener(\"click\", (e) => {\n    e.preventDefault();\n    mobileMenu.className = \"hidden\";\n  });\n})();\n\n\n//# sourceURL=webpack://fem-news-homepage/./src/index.js?");
 
 /***/ })
 

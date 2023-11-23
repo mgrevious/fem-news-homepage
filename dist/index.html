@@ -31,7 +31,7 @@
     </style>
   </head>
   <body>
-    <div class="">
+    <div>
       <header class="relative">
         <div class="flex justify-between items-center py-2 px-6 pt-6">
           <div id="logo" class="w-[45px] md:w-[64px]">
@@ -40,9 +40,16 @@
           <button id="icon-menu-btn" class="md:hidden">
             <img src="./assets/images/icon-menu.svg" alt="" />
           </button>
-          <div id="menu" class="">
+          <div
+            id="menu"
+            class="w-full fixed right-0 top-0 md:block md:static md:w-auto"
+          >
+            <div
+              id="menu-bg"
+              class="hidden opacity-50 bg-black md:hidden min-h-screen absolute right-0 left-0 top-0"
+            ></div>
             <nav
-              class="absolute right-0 top-0 w-2/3 min-h-screen md:static md:min-h-min md:w-auto bg-white md:bg-transparent z-10"
+              class="absolute top-0 -right-2/3 duration-300 transition-all w-2/3 min-h-screen md:static md:min-h-min md:w-auto bg-white md:bg-transparent"
             >
               <ul
                 class="flex flex-col md:flex-row pt-36 md:pt-0 text-lg md:text-[15px] font-light leading-6 text-header tracking-wide"
@@ -55,17 +62,14 @@
                   <a href="#">Categories</a>
                 </li>
               </ul>
+              <button id="close-btn" class="md:hidden">
+                <img
+                  src="./assets/images/icon-menu-close.svg"
+                  alt=""
+                  class="absolute top-6 right-5 z-20"
+                />
+              </button>
             </nav>
-            <button id="close-btn" class="md:hidden">
-              <img
-                src="./assets/images/icon-menu-close.svg"
-                alt=""
-                class="absolute top-6 right-5 z-20"
-              />
-            </button>
-            <div
-              class="bg-black md:hidden min-h-screen opacity-50 absolute right-0 left-0 top-0"
-            ></div>
           </div>
         </div>
       </header>
@@ -86,7 +90,7 @@
           />
           <div class="flex flex-col md:flex-row md:mb-2 lg:mb-10">
             <h1
-              class="text-[40px] leading-10 md:text-[56px] md:leading-[56px] font-bold mb-6 md:mr-24 lg:mr-15"
+              class="text-[40px] leading-10 md:text-[56px] md:leading-[56px] font-extrabold mb-6 md:mr-24 lg:mr-15"
             >
               The Bright Future of Web 3.0?
             </h1>
@@ -97,7 +101,7 @@
                 But is it really fulfilling its promise?
               </p>
               <button
-                class="bg-[#F15D51] text-white px-7 py-3 tracking-widest uppercase font-semibold mb-14"
+                class="bg-[#F15D51] text-white px-7 py-3 tracking-[4.38px] uppercase font-semibold mb-14"
               >
                 Read more
               </button>
